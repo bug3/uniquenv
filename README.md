@@ -4,3 +4,9 @@ Uniquenv is a tool for safe environment files.
 
 * **Quick:** You can use environment variables safely without using any password.
 * **Unique:** Your environment files are unique. Even if your files are stolen, they cannot be used on another computer.
+
+## Installation
+
+```bash
+npm install uniquenv
+```
