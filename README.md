@@ -10,3 +10,37 @@ Uniquenv is a tool for safe environment files.
 ```bash
 npm install uniquenv
 ```
+
+## Usage
+
+-   **Create environment file**:
+
+```javascript
+const uniquenv = require('uniquenv');
+
+const data = {
+    host: 'localhost:8128',
+    username: 'bug3',
+    password: 'fidelio'
+};
+
+const file = 'db.uniquenv';
+
+uniquenv.create(file, data);
+```
+
+-   **Use environment variables**:
+
+```javascript
+const uniquenv = require('uniquenv');
+
+const file = 'db.uniquenv';
+
+const db = uniquenv.parse(file);
+
+console.log(
+    db.host,
+    db.username,
+    db.password
+);
+```
