@@ -7,7 +7,7 @@
 	"directories": {
 		"lib": "lib"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"crypto-js": "^4.1.1"
 	},
 	"scripts": {
