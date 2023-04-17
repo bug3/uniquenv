@@ -19,9 +19,9 @@ npm install uniquenv
 const uniquenv = require('uniquenv');
 
 const data = {
-    host: 'localhost:8128',
-    username: 'bug3',
-    password: 'fidelio'
+    host: uniquenv.input('Host: '),
+    username: uniquenv.input('Username: '),
+    password: uniquenv.password('Password: ')
 };
 
 const file = 'db.uniquenv';
