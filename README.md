@@ -44,3 +44,7 @@ console.log(
     db.password
 );
 ```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
