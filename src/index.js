@@ -7,7 +7,15 @@ const create = (file, data) => {
     fs.write(file, encrypt(data));
 };
 
-const parse = (file) => decrypt(fs.read(file));
+const parse = (file) => {
+    if (!fs.existsSync(file)) {
+        console.error(`${ file } not found`);
+
+        return;
+    }
+
+    decrypt(fs.read(file));
+};
 
 const input = (text) => prompt(text);
 
