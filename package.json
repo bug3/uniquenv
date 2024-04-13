@@ -2,7 +2,7 @@
 	"name": "uniquenv",
 	"author": "bug3",
 	"description": "Safe environment files",
-	"version": "0.0.3",
+	"version": "0.0.5",
 	"main": "./src/index.js",
 	"directories": {
 		"lib": "lib"
