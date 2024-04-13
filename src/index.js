@@ -14,7 +14,7 @@ const parse = (file) => {
         return;
     }
 
-    decrypt(fs.read(file));
+    return decrypt(fs.read(file));
 };
 
 const input = (text) => prompt(text);
